@@ -7,7 +7,7 @@
   40% { border-color: rgb(255, 0, 0) }
   60% { border-color: rgb(255, 238, 0) }
   80% { border-color: rgb(30, 255, 0) }
-  100% { border-color: rgb(0, 255, 255) }
+  100% { border-color: rgb(0, 153, 255); }
 }
 @-webkit-keyframes background {  
   0% { background-color: #00b0f4; }
@@ -15,15 +15,33 @@
   77% { background-color: #faa61a; }
 }
 @-webkit-keyframes unread {  
-  0% { background-color: #faa61a; }
-  50% { background-color: rgba(250,166,26,0.2); }
+    0% { background: rgb(0, 153, 255); }
+    10% { background: rgba(0, 153, 255, 0.021); }
+    20% { background: rgb(255, 0, 234) }
+    30% { background: rgba(255, 0, 234, 0.021) }
+    40% { background: rgb(255, 0, 0) }
+    50% { background: rgba(255, 0, 0, 0.021) }
+    60% { background: rgb(255, 238, 0) }
+    70% { background: rgba(255, 238, 0, 0.021) }
+    80% { background: rgb(30, 255, 0) }
+    90% { background: rgba(30, 255, 0, 0.021) }
+    100% { background: rgb(0, 153, 255); }
 }
 @-webkit-keyframes rainbow {
-    20%{color: red;}
-    40%{color: yellow;}
-    60%{color: green;}
-    80%{color: blue;}
-    100%{color: orange;}
+    0% { color: rgb(0, 153, 255); }
+    20% { color: rgb(255, 0, 234) }
+    40% { color: rgb(255, 0, 0) }
+    60% { color: rgb(255, 238, 0) }
+    80% { color: rgb(30, 255, 0) }
+    100% { color: rgb(0, 153, 255); }
+}
+@-webkit-keyframes rainbowunread {
+    0% { background: rgb(0, 153, 255); }
+    20% { background: rgb(255, 0, 234) }
+    40% { background: rgb(255, 0, 0) }
+    60% { background: rgb(255, 238, 0) }
+    80% { background: rgb(30, 255, 0) }
+    100% { background: rgb(0, 153, 255); }
 }
 @-webkit-keyframes blue-glow {
     0%{color: #949494;}
@@ -93,7 +111,7 @@
     height: 10px;
     left: 3px;
 	top: 8px;
-    background: no-repeat url(https://i.imgur.com/w8Wtx8h.png);
+    background: no-repeat url(https://i.imgur.com/bHwNulK.png);
 }
 
 .wordmark-2L03Wr svg {
@@ -144,6 +162,7 @@
 }
 .message-group .avatar-large[style*='266613136403070978'] + .comment .user-name {
     color: #00adff;
+    -webkit-animation: rainbow 30s ease-in-out infinite;
 }
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
 .guild-settings-modal-members .avatar-small[style*='/a_'] + .member-inner .member-username::after,
@@ -186,7 +205,6 @@
     text-transform: none;
     width: 100%;
 }
-
 
 /* FROM DARKBLUE.CSS */
 
@@ -265,7 +283,7 @@
 }
 .guilds-wrapper .guilds .guild.unread:before {
     background: #e0961c;
-    -webkit-animation: unread 2s ease-in-out infinite;
+    -webkit-animation: unread 10s ease-in-out infinite;
     height: 40px;
     border-radius: 20px;
     margin-top: -20px;
@@ -304,10 +322,12 @@
     background-color: #1d232d;
 }
 .theme-dark .messages-wrapper .messages .divider.divider-red>span {
-    color: #faa61a;
+    color: #fa1a1a;
+    -webkit-animation: rainbow 30s ease-in-out infinite;
 }
 .theme-dark .messages-wrapper .messages .divider.divider-red>div {
-    background: #faa61a;
+    background: #fa1a1a;
+    -webkit-animation: rainbowunread 30s ease-in-out infinite;
 }
 .theme-dark .message-group .embed, embedInner-t4ag7g {
     background-color: rgb(26, 32, 41);
@@ -403,16 +423,17 @@
 .theme-dark .channel-members h2 {
     color: #99aab5;
     text-align: center;
-    font-size: 100%;
+    font-size: 90%;
+    -webkit-animation: rainbow 30s ease-in-out infinite;
 }
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected, .theme-dark #friends .tab-bar .tab-bar-item.selected, .emoji-picker .premium-promo .btn {
     background: linear-gradient(120deg,#1ad6ff 0,#00ff8b 100%);
     color: #36393e !important;
 }
 .chat .new-messages-bar {
-    background-color: #faa61a;
+    background-color: rgb(250, 26, 26);
     margin-top: 10px;
-    -webkit-animation: unread 2s ease-in-out infinite;
+    -webkit-animation: rainbowunread 30s ease-in-out infinite;
 }
 .chat .new-messages-bar button:last-child {
     color: #2b1e07;
@@ -1050,7 +1071,7 @@
 }
 /* user profile pic*/
 .user-popout .header, .headerNormal-1cioxU, .footer-2J5zqP, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .theme-dark .headerNormal-1cioxU, .headerTop-27AvhA {
-    background: no-repeat #000000 url(https://i.imgur.com/dbwEbVe.png);
+    background: no-repeat url(https://i.imgur.com/Mu4SNn6.jpg);
     background-size: 100% 100%;
 }
 .user-popout .avatar-wrapper .avatar-popout, .avatarNormal-3luwna, .avatarStreaming-1ZydJV, .invite-modal .scroller {
@@ -1131,7 +1152,8 @@
 .badge, .new-messages-indicator.new-messages-indicator-mention, .wrapper-2xO9RX,
 .theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:after, .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:after,
 .theme-dark .ui-calendar-picker .react-datepicker__day.react-datepicker__day--selected:after {
-    background-color: #faa61a;
+    background: #fa1a1a;
+    -webkit-animation: rainbowunread 30s ease-in-out infinite;
 }
 .theme-dark .message-group.is-local-bot-message {
     background: #1d232d;
