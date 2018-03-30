@@ -2,9 +2,12 @@
 /* version: 0.2.1 */
 
 @-webkit-keyframes line {
-  0% { border-color: #00b0f4; }
-  33% { border-color: #00ff6f; }
-  77% { border-color: #faa61a; }
+  0% { border-color: rgb(0, 153, 255); }
+  20% { border-color: rgb(255, 0, 234) }
+  40% { border-color: rgb(255, 0, 0) }
+  60% { border-color: rgb(255, 238, 0) }
+  80% { border-color: rgb(30, 255, 0) }
+  100% { border-color: rgb(0, 255, 255) }
 }
 @-webkit-keyframes background {  
   0% { background-color: #00b0f4; }
