@@ -206,7 +206,97 @@
     width: 100%;
 }
 
-/* FROM DARKBLUE.CSS */
+
+/* FROM GLOSSY CYAN - HANSANONYMOUS - edit by deluuxe*/
+
+[class*=userPopout] [class*=avatarWrapper] [style*=image] {
+    background-color: unset;
+    width: 100%;
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    border: none;
+    mask: unset;
+    -webkit-mask: unset;
+    box-shadow: unset;
+    position: fixed;
+    top:0px;
+    left:0px;
+}
+
+[class*=userPopout] [class*=tatusOnline] {
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    left:0px;
+    border-radius: 0px;
+    pointer-events:none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 0px #00ff0d;
+    border-bottom: solid 4px #00ff0d;
+}
+[class*=userPopout] [class*=tatusDnd] {
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    left:0px;
+    border-radius: 0px;
+    pointer-events:none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 0px #d01414;
+    border-bottom: solid 5px #d01414;
+}
+[class*=userPopout] [class*=tatusIdle] {
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    left:0px;
+    border-radius: 0px;
+    pointer-events:none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 0px #d01414;
+    border-bottom: solid 5px #ff8800;
+}
+[class*=userPopout] [class*=tatusOffline] {
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    left:0px;
+    border-radius: 0px;
+    pointer-events:none;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 0px #d01414;
+    border-bottom: solid 5px #616161;
+}
+
+[class*=userPopout] [class*=avatarWrapper] [class*=avatarHint-] {
+    background: unset;
+    margin:4px 0 0 0;
+    box-shadow:none;
+    opacity:0;
+    border-radius: 0;
+    transition: opacity 180ms ease-out 100ms;
+    -webkit-mask:unset;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    top:-4px;
+}
+[class*=userPopout] [class*=avatarWrapperNormal]:hover [class*=avatarHint-] {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.5) 100%);
+    transition:opacity 200ms ease-in 80ms;
+    opacity:1;
+}
+
+
+/* FROM DARKBLUE.CSS  - edit by deluux*/
 
 .theme-dark .friends-table, .theme-dark .messages-wrapper, .theme-dark .chat form {
     background-color: #1d232d;
@@ -578,7 +668,7 @@
     color: #e6ac0a;
 }
 #user-profile-modal .guilds .section .section-header {
-    color: rgba(231, 239, 255, 0.9);
+    color: rgba(255, 231, 231, 0.9);
 }
 .guilds-wrapper .guilds-add {
     background: #0c1119;
@@ -1069,11 +1159,35 @@
     border-radius: 3px;
     margin-left: 8px;
 }
-/* user profile pic*/
+/* user popout top*/
 .user-popout .header, .headerNormal-1cioxU, .footer-2J5zqP, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .theme-dark .headerNormal-1cioxU, .headerTop-27AvhA {
-    background: no-repeat url(https://i.imgur.com/Mu4SNn6.jpg);
-    background-size: 100% 100%;
+    /*background: no-repeat url(https://i.imgur.com/Mu4SNn6.jpg);
+    background-size: 100% 100%;*/
+    background-color: #000000;
+    width: 92%;
+    height: 210px;
+}/*
+.user-popout .header, .headerNormal-1cioxU, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .theme-dark .headerNormal-1cioxU, .avatarWrapper-39HKca, .avatar-1BXaQj, .image-EVRGPw{
+    border-radius: 0%;
+}*/
+.user-popout .header, .headerNormal-1cioxU, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .headerText-3ptbeX, .headerTag-I11IJx{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 100%;
+    position: absolute;
+    top: 230px;
+    width: 100%;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
+.user-popout .header, .headerNormal-1cioxU, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .headerText-3ptbeX, .headerName-3U6eDn{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 100%;
+    position: absolute;
+    top: 0px;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+/* end user popout top */
 .user-popout .avatar-wrapper .avatar-popout, .avatarNormal-3luwna, .avatarStreaming-1ZydJV, .invite-modal .scroller {
     border: 4px solid #0c1638;
     background-color: #0c1638;
