@@ -2,20 +2,21 @@
 
 /* global PluginUtilities:false, InternalUtilities:false, BdApi:false */
 
+
 class DiscordDeluuxeEdition {
 	getName() { return "DiscordDeluuxeEdition"; }
 	getShortName() { return "DDE"; }
-	getDescription() { return "Adds custom discord style by deluuxe. AUTOMAGICALY UPDATES"; }
+	getDescription() { return "Adds custom discord style by deluuxe.  style updated automatic, this plugin does not."; }
 	getVersion() { return "1.0"; }
 	getAuthor() { return "DELUUXE#1608"; }
 
 	constructor() {
 		this.initialized = false;
 	}
-	
-	load() {}
-	unload() {}
-	
+
+	load() { }
+	unload() { }
+
 	start() {
 		var libraryScript = document.getElementById('LibraryScript');
 		if (libraryScript) libraryScript.parentElement.removeChild(libraryScript);
@@ -30,32 +31,30 @@ class DiscordDeluuxeEdition {
 	}
 
 	initialize() {
-        let fs = require('fs');
 		this.initialized = true;
-        var DDEcss = 'DDEcss';
-        if (!document.getElementById(DDEcss))
-        {
-            var head  = document.getElementsByTagName('head')[0];
-            var link  = document.createElement('link');
-            link.id   = DDEcss;
-            link.rel  = 'stylesheet';
-            link.type = 'text/css';
-            link.href = 'https://deluuxe.github.io/DiscordDeluuxeEdition/DiscordDeluuxeEdition.css';
-            link.media = 'all';
-            head.appendChild(link);
-        }
+		var DDEcss = 'DDEcss';
+		if (!document.getElementById(DDEcss)) {
+			var head = document.getElementsByTagName('head')[0];
+			var link = document.createElement('link');
+			link.id = DDEcss;
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'https://deluuxe.github.io/DiscordDeluuxeEdition/DiscordDeluuxeEdition.css';
+			link.media = 'all';
+			head.appendChild(link);
+		}
+
 		PluginUtilities.showToast(this.getName() + " has started.");
 	}
 
 	stop() {
-        //BdApi.clearCSS(this.getShortName());
-        if(document.getElementById(DDEcss)){
-            document.head.removeChild(document.getElementById(DDEcss));
-        }
-    }
+		//BdApi.clearCSS(this.getShortName());
+		if (document.getElementById(DDEcss)) {
+			document.head.removeChild(document.getElementById(DDEcss));
+		}
+	}
 
 	getSettingsPanel() {
 		return null;
 	}
 }
-
