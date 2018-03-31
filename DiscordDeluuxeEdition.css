@@ -1,5 +1,5 @@
 /* DiscordDeluuxeEdition by DELUUXE */
-/* version: 0.2.1 */
+/* version: 0.3.0 */
 
 @-webkit-keyframes line {
   0% { border-color: rgb(0, 153, 255); }
@@ -1253,6 +1253,7 @@
 }
 .avatarSpeaking-3teDH6 {
     box-shadow: 0 0 0 2px #00b8ff, inset 0 0 0 1.5px #2f3136;
+    border-radius: 2px;
     animation: speaking-single 2s infinite;
 }
 .wrapperSelectedVoice-1Q1ocJ {
