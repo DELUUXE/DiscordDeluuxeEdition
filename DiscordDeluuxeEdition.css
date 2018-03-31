@@ -179,7 +179,7 @@
     vertical-align: bottom;
 }
 .message-group .avatar-large[style*='266613136403070978'] + .comment .user-name {
-    color: #00adff;
+    color: #00adff  !important;
 }
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
 .guild-settings-modal-members .avatar-small[style*='/a_'] + .member-inner .member-username::after,
@@ -371,6 +371,7 @@
     border-radius: 4px !important;
 }
 .avatar-small,  .avatar-small.animate {
+    top:-2px;
     border-radius: 2px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -1801,4 +1802,18 @@
 }
 .theme_dark-2FtE3l {
     background-color: #000000;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ------------------------------- custom user colors (VIP'S) ----------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+.message-group .avatar-large[style*='270116563732922369'] + .comment .user-name {
+    -webkit-animation: rainbow 30s ease-in-out infinite !important;
 }
