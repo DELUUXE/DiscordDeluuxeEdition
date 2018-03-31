@@ -616,7 +616,7 @@
     color: #99aab5;
     text-align: center;
     font-size: 90%;
-    -webkit-animation: rainbow 30s ease-in-out infinite;
+    /*-webkit-animation: rainbow 30s ease-in-out infinite;*/
 }
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected, .theme-dark #friends .tab-bar .tab-bar-item.selected, .emoji-picker .premium-promo .btn {
     background: linear-gradient(120deg,#1ad6ff 0,#00ff8b 100%);
