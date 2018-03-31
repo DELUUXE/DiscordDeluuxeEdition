@@ -99,11 +99,30 @@
 /* END OF ANIMATION DEFINITIONS */
 
 
+/* CCS by DELUUXE */
+
+[class*=channels] [class*=containerDefault] [class*=userDefault] [class*=avatarContainer] [class*=avatarDefault] {
+    border-radius: 2px !important;
+}
+[class*=channels] [class*=containerDefault] [class*=userHovered] [class*=avatarContainer] [class*=avatarDefault] {
+    border-radius: 2px !important;
+}
+[class*=activityUserPopout] {
+    user-select: text;
+}
+[class*=activityProfile] [class*=headerTextNormal]{
+    user-select: text;
+}
+[class*=activityProfile] [class*=nameWrap]{
+    user-select: text;
+}
+
+
+/* custom logo instead of discord logo */
 .wordmark-2L03Wr {
 	/*width: 126px;
 	height: 14px;*/
 }
-
 .wordmark-2L03Wr:after {
 	position: absolute;
 	content: " ";
@@ -113,7 +132,6 @@
 	top: 8px;
     background: no-repeat url(https://i.imgur.com/bHwNulK.png);
 }
-
 .wordmark-2L03Wr svg {
 	display: none;
 }
@@ -162,7 +180,6 @@
 }
 .message-group .avatar-large[style*='266613136403070978'] + .comment .user-name {
     color: #00adff;
-    -webkit-animation: rainbow 30s ease-in-out infinite;
 }
 .avatar-small[style*='/a_'] + .member-inner .member-username-inner::after,
 .guild-settings-modal-members .avatar-small[style*='/a_'] + .member-inner .member-username::after,
@@ -218,6 +235,8 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     border: none;
     mask: unset;
     -webkit-mask: unset;
@@ -295,6 +314,88 @@
     opacity:1;
 }
 
+[class*=modal] [class*=avatar] [class*=image] {
+    border-radius: 3px;
+}
+[class*=modal] [class*=avatar] [class*=mask] {
+    mask: none !important;
+    -webkit-mask: none !important;
+}
+
+[class*=modal] [class*=avatar-4g] [class*=tatusOnline] {
+    top: -3px;
+    width: 90px;
+    height: 90px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px;
+    border-bottom: solid 4px #00ff0d;
+}
+[class*=modal] [class*=avatar-4g] [class*=tatusDnd] {
+    top: -3px;
+    width: 90px;
+    height: 90px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px;
+    border-bottom: solid 4px #ff0000;
+}
+[class*=modal] [class*=avatar-4g] [class*=tatusIdle] {
+    top: -3px;
+    width: 90px;
+    height: 90px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px;
+    border-bottom: solid 4px #ff9900;
+}
+[class*=modal] [class*=avatar-4g] [class*=tatusOffline] {
+    top: -3px;
+    width: 90px;
+    height: 90px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px ;
+}
+
+/* make all avatars square */
+.guilds-wrapper .guilds .guild .guild-inner, .avatar-large, .avatar-large.animate, .guilds-error, .guilds .guilds-add, .icon-friends, .avatar-popout {
+    border-radius: 4px !important;
+}
+.avatar-small,  .avatar-small.animate {
+    border-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.avatar-small .status {
+    margin:0px;
+    padding: 0px;
+    border: 0px !important;
+    position: absolute;
+    left:0px;
+    bottom:-1px;
+    width: 100%;
+    height: 3px;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.guilds-wrapper .guilds .guild .guild-inner:hover {
+    border: solid 3px;
+    position: absolute;
+    -webkit-animation: line 20s ease-in-out infinite;
+    margin: 0px;
+    margin-top: -3px;
+    margin-left: -3px;  
+}
 
 /* FROM DARKBLUE.CSS  - edit by deluux*/
 
@@ -1163,7 +1264,7 @@
 .user-popout .header, .headerNormal-1cioxU, .footer-2J5zqP, .headerStreaming-3F-wjT, .headerPlaying-2eYqm9, .theme-dark .headerNormal-1cioxU, .headerTop-27AvhA {
     /*background: no-repeat url(https://i.imgur.com/Mu4SNn6.jpg);
     background-size: 100% 100%;*/
-    background-color: #000000;
+    background-color: #0f1c46;
     width: 92%;
     height: 210px;
 }/*
