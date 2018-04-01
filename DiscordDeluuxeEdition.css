@@ -458,6 +458,25 @@ form, .container-iksrDt {
     margin-top: -3px;
     margin-left: -3px;  
 }
+[class*=private] [class*=avatar-small] {
+    top:0px;
+    border-radius: 2px;
+    mask: unset;
+    -webkit-mask: unset;
+}
+[class*=private] [class*=avatar-small] .status {
+    margin:0px;
+    padding: 0px;
+    border: 0px !important;
+    position: absolute;
+    left:0px;
+    bottom:-1px;
+    width: 100%;
+    height: 3px;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
 
 /* FROM DARKBLUE.CSS  - edit by deluux*/
 
