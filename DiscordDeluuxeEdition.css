@@ -43,6 +43,11 @@
     80% { background: rgb(30, 255, 0) }
     100% { background: rgb(0, 153, 255); }
 }
+@-webkit-keyframes Typinganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 @-webkit-keyframes blue-glow {
     0%{color: #949494;}
     50%{color: #79c1da;}
@@ -116,6 +121,29 @@
 [class*=activityProfile] [class*=nameWrap]{
     user-select: text;
 }
+.memberOnline-1xn3V8:hover {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+/* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN 
+.messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_  {
+    background: url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
+    background-size: cover !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+form, .container-iksrDt {
+    margin: 0px !important;
+    background: url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
+    background-size: cover !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+[class*=channelTextArea]{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* CUSTOM WALLPAPERS END */
 
 
 /* custom logo instead of discord logo */
@@ -370,13 +398,15 @@
 .guilds-wrapper .guilds .guild .guild-inner, .avatar-large, .avatar-large.animate, .guilds-error, .guilds .guilds-add, .icon-friends, .avatar-popout {
     border-radius: 4px !important;
 }
-.avatar-small,  .avatar-small.animate {
+.image-EVRGPw, .container-iksrDt .avatar-small{
     top:-2px;
     border-radius: 2px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    mask: unset;
+    -webkit-mask: unset;
 }
-.avatar-small .status {
+.status-2Devx1, .container-iksrDt .avatar-small .status {
     margin:0px;
     padding: 0px;
     border: 0px !important;
@@ -388,6 +418,37 @@
     border-radius: 0;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+[class*=statusTyping] {
+    margin:0px;
+    padding: 0px;
+    border: 0px !important;
+    position: absolute;
+    left:0px;
+    bottom:-1px;
+    width: 100% !important;
+    height: 3px;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+[class*=statusOnline][class*=statusTyping]  {
+    background: linear-gradient(270deg, #00ff6f, #000000, #00ff6f);
+    background-size: 600% 600%;
+    -webkit-animation: Typinganimation 3s ease-in-out infinite;
+}
+[class*=statusIdle][class*=statusTyping]  {
+    background: linear-gradient(270deg, #faa61a, #000000, #faa61a);
+    background-size: 600% 600%;
+    -webkit-animation: Typinganimation 3s ease-in-out infinite;
+}
+[class*=statusDnd][class*=statusTyping]  {
+    background: linear-gradient(270deg, #fe080b, #000000, #fe080b);
+    background-size: 600% 600%;
+    -webkit-animation: Typinganimation 3s ease-in-out infinite;
+}
+.spinner-2szMS3, .pulsingEllipsis-36SsC3 {
+    display: none;
 }
 .guilds-wrapper .guilds .guild .guild-inner:hover {
     border: solid 3px;
