@@ -128,7 +128,9 @@
 
 
 /* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN 
-.messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_  {
+.messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_,
+[class*=sidebar-region-scroller], [class*=content-transition-wrap], [id*=bd-settingspane-container],
+[class*=scrollerWrap-2uBjct] {
     background: url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
     background-color: rgba(0,0,0,0) !important;
@@ -477,6 +479,16 @@ form, .container-iksrDt {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+[class*=friends-table-body] [class*=avatar-small]{
+    border-radius: 2px;
+    mask: unset;
+    -webkit-mask: unset;
+}
+[class*=friends-table-body] .status{
+    border-radius: 2px;
+    mask: unset;
+    -webkit-mask: unset;
+}
 
 /* FROM DARKBLUE.CSS  - edit by deluux*/
 
@@ -645,10 +657,13 @@ form, .container-iksrDt {
     background-color: #101721;
 }
 .private-channels .channel.selected {
-    background: linear-gradient(to right,#102344 85%,#101721);
+    background: #102344;
 }
 .private-channels .channel:hover {
-    background: linear-gradient(to right,#183567 85%,#101721);
+    background: linear-gradient(to right,#183567 85%,#924343 0%);
+}
+[class*=btn-friends]:hover{
+    background: #183567 !important;
 }
 .search-bar {
     background-color: #101721;
