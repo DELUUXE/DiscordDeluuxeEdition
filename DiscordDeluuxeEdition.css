@@ -9,6 +9,14 @@
   80% { border-color: rgb(30, 255, 0) }
   100% { border-color: rgb(0, 153, 255); }
 }
+@-webkit-keyframes fadeoutline {
+    0% { border-color: rgb(0, 71, 119); }
+    20% { border-color: rgb(100, 0, 92) }
+    40% { border-color: rgb(85, 0, 0) }
+    60% { border-color: rgb(77, 71, 0) }
+    80% { border-color: rgb(9, 78, 0)}
+    100% { border-color: rgb(0, 46, 77); }
+  }
 @-webkit-keyframes background {  
   0% { background-color: #00b0f4; }
   33% { background-color: #00ff6f; }
@@ -127,24 +135,32 @@
 }
 
 
-/* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN 
+/* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN */
 .messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_,
 [class*=sidebar-region-scroller], [class*=content-transition-wrap], [id*=bd-settingspane-container],
-[class*=scrollerWrap-2uBjct] {
-    background: url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
+[class*=scrollerWrap-2uBjct], .topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.274)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
-    background-color: rgba(0,0,0,0) !important;
+    color: white;
+    /*background-color: rgba(0, 0, 0, 0.678) !important;*/
 }
 form, .container-iksrDt {
     margin: 0px !important;
-    background: url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.274)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
-    background-color: rgba(0,0,0,0) !important;
+    /*background-color: rgba(0, 0, 0, 0.651) !important;*/
 }
 [class*=channelTextArea]{
     margin-left: 20px;
     margin-right: 20px;
 }
+.topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1 {
+    border-bottom: solid 2px #3a71c1 !important;
+}/*
+.scroller-NXV0-d {
+    border-right: 2px solid;
+    -webkit-animation: fadeoutline 30s ease-in-out infinite !important;
+}*/
 /* CUSTOM WALLPAPERS END */
 
 
@@ -1736,8 +1752,7 @@ form, .container-iksrDt {
     background: #000615;
 }
 .theme-dark .body-3_tdh6 {
-    background: #0f1625;
-
+    background: #0f1625 !important;
 }
 .theme-dark .root-2sNHUF .note-39NEdV textarea:focus, .theme-dark .userPopout-4pfA0d .note textarea:focus {
     background-color: rgba(255, 255, 255, 0.03);
