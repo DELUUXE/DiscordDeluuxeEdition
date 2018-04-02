@@ -275,7 +275,6 @@ form, .container-iksrDt {
     top:0px;
     left:0px;
 }
-
 [class*=userPopout] [class*=tatusOnline] {
     position: fixed;
     top: 0px;
@@ -488,6 +487,19 @@ form, .container-iksrDt {
     border-radius: 2px;
     mask: unset;
     -webkit-mask: unset;
+}
+.status-3jUEha{
+    margin:0px;
+    padding: 0px;
+    border: 0px !important;
+    position: absolute;
+    left:0px;
+    bottom:-1px;
+    width: 100%;
+    height: 3px;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 /* FROM DARKBLUE.CSS  - edit by deluux*/
@@ -1725,6 +1737,7 @@ form, .container-iksrDt {
 }
 .theme-dark .body-3_tdh6 {
     background: #0f1625;
+
 }
 .theme-dark .root-2sNHUF .note-39NEdV textarea:focus, .theme-dark .userPopout-4pfA0d .note textarea:focus {
     background-color: rgba(255, 255, 255, 0.03);
