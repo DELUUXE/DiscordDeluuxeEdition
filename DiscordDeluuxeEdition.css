@@ -425,7 +425,7 @@ form, .container-iksrDt {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-[class*=statusTyping] {
+[class*=statusTyping]{
     margin:0px;
     padding: 0px;
     border: 0px !important;
@@ -438,22 +438,35 @@ form, .container-iksrDt {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-[class*=statusOnline][class*=statusTyping]  {
+.status.status-typing{
+    margin:0px;
+    padding: 0px;
+    border: 0px !important;
+    position: absolute;
+    left:0px;
+    bottom:-1px;
+    width: 30px !important;
+    height: 3px;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+[class*=statusOnline][class*=statusTyping], .status-typing.status-online  {
     background: linear-gradient(270deg, #00ff6f, #000000, #00ff6f);
     background-size: 600% 600%;
     -webkit-animation: Typinganimation 3s ease-in-out infinite;
 }
-[class*=statusIdle][class*=statusTyping]  {
+[class*=statusIdle][class*=statusTyping], .status-typing.status-idle  {
     background: linear-gradient(270deg, #faa61a, #000000, #faa61a);
     background-size: 600% 600%;
     -webkit-animation: Typinganimation 3s ease-in-out infinite;
 }
-[class*=statusDnd][class*=statusTyping]  {
+[class*=statusDnd][class*=statusTyping], .status-typing.status-dnd  {
     background: linear-gradient(270deg, #fe080b, #000000, #fe080b);
     background-size: 600% 600%;
     -webkit-animation: Typinganimation 3s ease-in-out infinite;
 }
-.spinner-2szMS3, .pulsingEllipsis-36SsC3 {
+.spinner-2szMS3, .pulsingEllipsis-36SsC3, .spinner {
     display: none;
 }
 .guilds-wrapper .guilds .guild .guild-inner:hover {
