@@ -24,15 +24,9 @@
 }
 @-webkit-keyframes unread {  
     0% { background: rgb(0, 153, 255); }
-    10% { background: rgba(0, 153, 255, 0.021); }
-    20% { background: rgb(255, 0, 234) }
-    30% { background: rgba(255, 0, 234, 0.021) }
-    40% { background: rgb(255, 0, 0) }
-    50% { background: rgba(255, 0, 0, 0.021) }
-    60% { background: rgb(255, 238, 0) }
-    70% { background: rgba(255, 238, 0, 0.021) }
-    80% { background: rgb(30, 255, 0) }
-    90% { background: rgba(30, 255, 0, 0.021) }
+    25% { background: rgba(0, 153, 255, 0.021); }
+    50% { background: rgb(255, 174, 0) }
+    75% { background: rgba(255, 238, 0, 0.021) }
     100% { background: rgb(0, 153, 255); }
 }
 @-webkit-keyframes rainbow {
@@ -129,16 +123,12 @@
 [class*=activityProfile] [class*=nameWrap]{
     user-select: text;
 }
-.memberOnline-1xn3V8:hover {
-    padding: 0px !important;
-    margin: 0px !important;
-}
 
 
 /* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN */
 .messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_,
 [class*=sidebar-region-scroller], [class*=content-transition-wrap], [id*=bd-settingspane-container],
-[class*=scrollerWrap-2uBjct], .topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1 {
+[class*=scrollerWrap-2uBjct], .topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1, .members-1bid1J {
     background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.274)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
     color: white;
@@ -156,7 +146,13 @@ form, .container-iksrDt {
 }
 .topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1 {
     border-bottom: solid 2px #3a71c1 !important;
-}/*
+}
+.inner-3if5cm{
+    background: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.329)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: white;
+}
+/*
 .scroller-NXV0-d {
     border-right: 2px solid;
     -webkit-animation: fadeoutline 30s ease-in-out infinite !important;
@@ -291,53 +287,44 @@ form, .container-iksrDt {
     top:0px;
     left:0px;
 }
-[class*=userPopout] [class*=tatusOnline] {
+[class*=userPopout] [class*=tatusOnlineProfile] {
     position: fixed;
-    top: 0px;
+    top: 250px;
     width: 250px;
-    height: 250px;
+    height: 4px;
     left:0px;
     border-radius: 0px;
     pointer-events:none;
-    background-color: rgba(0,0,0,0);
+    /*background-color: rgba(0,0,0,0);
     box-shadow: inset 0 0 0 0px #00ff0d;
-    border-bottom: solid 4px #00ff0d;
+    border-bottom: solid 4px #00ff0d;*/
 }
 [class*=userPopout] [class*=tatusDnd] {
     position: fixed;
-    top: 0px;
+    top: 250px;
     width: 250px;
-    height: 250px;
+    height: 4px;
     left:0px;
     border-radius: 0px;
     pointer-events:none;
-    background-color: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 0px #d01414;
-    border-bottom: solid 5px #d01414;
 }
 [class*=userPopout] [class*=tatusIdle] {
     position: fixed;
-    top: 0px;
+    top: 250px;
     width: 250px;
-    height: 250px;
+    height: 4px;
     left:0px;
     border-radius: 0px;
     pointer-events:none;
-    background-color: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 0px #d01414;
-    border-bottom: solid 5px #ff8800;
 }
 [class*=userPopout] [class*=tatusOffline] {
     position: fixed;
-    top: 0px;
+    top: 250px;
     width: 250px;
-    height: 250px;
+    height: 4px;
     left:0px;
     border-radius: 0px;
     pointer-events:none;
-    background-color: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 0px #d01414;
-    border-bottom: solid 5px #616161;
 }
 
 [class*=userPopout] [class*=avatarWrapper] [class*=avatarHint-] {
@@ -368,15 +355,17 @@ form, .container-iksrDt {
 }
 
 [class*=modal] [class*=avatar-4g] [class*=tatusOnline] {
-    top: -3px;
+    bottom: 0px;
     width: 90px;
-    height: 90px;
+    height: 4px;
     left:-0px;
-    border-radius: 4px;
+    border-radius: 0px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
     pointer-events:none;
-    background-color: unset;
+    /*background-color: unset;
     box-shadow: inset 0 0 0 0px;
-    border-bottom: solid 4px #00ff0d;
+    border-bottom: solid 4px #00ff0d;*/
 }
 [class*=modal] [class*=avatar-4g] [class*=tatusDnd] {
     top: -3px;
@@ -595,7 +584,7 @@ form, .container-iksrDt {
 }
 .guilds-wrapper .guilds .guild.unread:before {
     background: #e0961c;
-    -webkit-animation: unread 10s ease-in-out infinite;
+    -webkit-animation: unread 3s ease-in-out infinite;
     height: 40px;
     border-radius: 20px;
     margin-top: -20px;
