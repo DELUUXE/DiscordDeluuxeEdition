@@ -535,8 +535,8 @@ form, .container-iksrDt {
 .guild-header header:hover {
     background-color: rgb(13, 18, 27);
 }
-.theme-dark .channel-members, .theme-dark .channel-members-loading .heading, .theme-dark .channel-members-loading .member {
-    background-color: #151e2d;
+.theme-dark .channel-members, .theme-dark .channel-members-loading .heading, .theme-dark .channel-members-loading .member, [class*=members-1bid1J] {
+    background-color: #151e2d !important;
 }
 .guild-channels, .theme-dark .headerBar-cxbhPD {
     background-color: #101721;
@@ -550,8 +550,8 @@ form, .container-iksrDt {
 .guild-channels .channel-text:hover {
     background: #18305a;
 }
-.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
-    background: #18305a;
+.theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover{
+    background: #18305a !important;
 }
 .account, .theme-dark .private-channel-recipients-invite .friend {
     background: #0c1119;
