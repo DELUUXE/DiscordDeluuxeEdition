@@ -125,20 +125,18 @@
 }
 
 
-/* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN */
+/* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN 
 .messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_,
 [class*=sidebar-region-scroller], [class*=content-transition-wrap], [id*=bd-settingspane-container],
 [class*=scrollerWrap-2uBjct], .topSectionPlaying-3jAH9b, .topSectionNormal-2LlRG1, .members-1bid1J {
     background: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.474)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
     color: white;
-    /*background-color: rgba(0, 0, 0, 0.678) !important;*/
 }
 form, .container-iksrDt {
     margin: 0px !important;
     background: linear-gradient(rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0.474)), url(https://i.imgur.com/Mu4SNn6.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
-    /*background-color: rgba(0, 0, 0, 0.651) !important;*/
 }
 [class*=channelTextArea]{
     margin-left: 20px;
