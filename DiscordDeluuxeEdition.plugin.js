@@ -7,7 +7,7 @@ class DiscordDeluuxeEdition {
 	getName() { return "DiscordDeluuxeEdition"; }
 	getShortName() { return "DDE"; }
 	getDescription() { return "Adds custom discord style by deluuxe.  style updated automatic, this plugin does not."; }
-	getVersion() { return "1.0"; }
+	getVersion() { return "2.0"; }
 	getAuthor() { return "DELUUXE#1608"; }
 
 	constructor() {
@@ -45,13 +45,33 @@ class DiscordDeluuxeEdition {
 		}
 
 		PluginUtilities.showToast(this.getName() + " has started.");
+
+		/* text box focus color */
+		document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.add("textAreaFocused");
+		document.getElementsByClassName("channelTextArea-1LDbYG")[0].getElementsByTagName("textarea")[0].onfocus = function(){
+			document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.add("textAreaFocused");
+		};
+		document.getElementsByClassName("channelTextArea-1LDbYG")[0].getElementsByTagName("textarea")[0].blur = function(){
+			document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.remove("textAreaFocused");
+		};
+		document.getElementsByClassName("guilds")[0].onclick = function(){
+			setTimeout(() => {
+				document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.add("textAreaFocused");
+				document.getElementsByClassName("channelTextArea-1LDbYG")[0].getElementsByTagName("textarea")[0].onfocus = function(){
+					document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.add("textAreaFocused");
+				};
+				document.getElementsByClassName("channelTextArea-1LDbYG")[0].getElementsByTagName("textarea")[0].blur = function(){
+					document.getElementsByClassName("channelTextArea-1LDbYG")[0].classList.remove("textAreaFocused");
+				};
+			}, 200);
+		};
+		/* END text box focus color */
 	}
 
 	stop() {
 		//BdApi.clearCSS(this.getShortName());
-		if (document.getElementById(DDEcss)) {
-			document.head.removeChild(document.getElementById(DDEcss));
-		}
+		PluginUtilities.showToast(this.getName() + " has stopped.");
+		document.getElementById("DDEcss").remove();
 	}
 
 	getSettingsPanel() {
