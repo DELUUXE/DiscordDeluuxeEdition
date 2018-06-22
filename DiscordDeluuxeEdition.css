@@ -1,5 +1,5 @@
 /* DiscordDeluuxeEdition by DELUUXE */
-/* version: 2.0.0 */
+/* version: 3.0.0 */
 
 @-webkit-keyframes line {
   0% { border-color: rgb(0, 153, 255); }
@@ -131,8 +131,7 @@
     border-radius: 5px;
     transition-duration: 1000ms;
 }
-
-[class*=channelTextArea]:hover{
+.textAreaFocused {
     border: #0080ff solid 1px;
     border-radius: 5px;
 }
@@ -173,6 +172,40 @@
     border-bottom: solid 1px;
     -webkit-animation: line 30s ease-in-out infinite;
 }
+
+/* games tab */
+.activityFeed-28jde9 {
+    background:  #181e27 !important;
+}
+[class*=cardBody] {
+    background:  #202d41 !important;
+}
+.activityFeed-28jde9 .header-1RC2Wb {
+    background:  rgba(0, 62, 134, 0.164) !important;
+}
+.dockItem-2kQDqg:hover {
+    background:  #202d41 !important;
+}
+.activityFeed-28jde9 [class*=article],
+.activityFeed-28jde9 .carousel-JbsNzL {
+    background: transparent !important;
+}
+/* end games tab */
+
+/* text channel hover */
+.contentHoveredText-2D9B-x{
+    background:  #1e3355 !important;
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 16px;
+}
+.contentSelectedText-3wUhMi{
+    background:  #1b3966 !important;
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 16px;
+}
+
 
 /* CUSTOM WALLPAPERS SOON TO MOVE TO THE PLUGIN 
 .messages-wrapper, [class*=chat], .channel-members, .scroller-NXV0-d, .container-3lnMWU, .typing-3eiiL_,
@@ -380,7 +413,8 @@ form, .container-iksrDt {
     top:0px;
     left:0px;
 }
-[class*=userPopout] [class*=tatusOnline] {
+
+[class*=userPopout] [class*=online] {
     position: fixed;
     top: 250px;
     width: 250px;
@@ -395,7 +429,7 @@ form, .container-iksrDt {
     box-shadow: inset 0 0 0 0px #00ff0d;
     border-bottom: solid 4px #00ff0d;*/
 }
-[class*=userPopout] [class*=tatusDnd] {
+[class*=userPopout] [class*=dnd] {
     position: fixed;
     top: 250px;
     width: 250px;
@@ -407,7 +441,7 @@ form, .container-iksrDt {
     -webkit-mask: unset;
     box-shadow: unset;
 }
-[class*=userPopout] [class*=tatusIdle] {
+[class*=userPopout] [class*=idle] {
     position: fixed;
     top: 250px;
     width: 250px;
@@ -419,7 +453,7 @@ form, .container-iksrDt {
     -webkit-mask: unset;
     box-shadow: unset;
 }
-[class*=userPopout] [class*=tatusOffline] {
+[class*=userPopout] [class*=offline] {
     position: fixed;
     top: 250px;
     width: 250px;
@@ -476,7 +510,7 @@ form, .container-iksrDt {
     -webkit-mask: none !important;
 }
 
-[class*=modal] [class*=profile] [class*=statusOnline] {
+[class*=modal] [class*=profile] [class*=online] {
     bottom: 0px;
     width: 90px;
     height: 4px;
@@ -489,7 +523,7 @@ form, .container-iksrDt {
     box-shadow: inset 0 0 0 0px;
     border-bottom: solid 4px #00ff0d;*/
 }
-[class*=modal] [class*=profile] [class*=statusDnd] {
+[class*=modal] [class*=profile] [class*=dnd] {
     top: -3px;
     width: 90px;
     height: 90px;
@@ -500,7 +534,7 @@ form, .container-iksrDt {
     box-shadow: inset 0 0 0 0px;
     border-bottom: solid 4px #ff0000;
 }
-[class*=modal] [class*=profile] [class*=statusIdle] {
+[class*=modal] [class*=profile] [class*=idle] {
     top: -3px;
     width: 90px;
     height: 90px;
@@ -511,7 +545,7 @@ form, .container-iksrDt {
     box-shadow: inset 0 0 0 0px;
     border-bottom: solid 4px #ff9900;
 }
-[class*=modal] [class*=profile] [class*=statusOffline] {
+[class*=modal] [class*=profile] [class*=offline] {
     top: -3px;
     width: 90px;
     height: 90px;
@@ -523,7 +557,7 @@ form, .container-iksrDt {
 }
 
 /* mutual friend status */
-[class*=modal] [class*=listAvatar] [class*=statusOnline] {
+[class*=modal] [class*=listAvatar] [class*=online] {
     top: -3px;
     width: 40px;
     height: 40px;
@@ -534,7 +568,7 @@ form, .container-iksrDt {
     box-shadow: inset 0 0 0 0px;
     border-bottom: solid 4px #838383;
 }
-[class*=modal] [class*=listAvatar] [class*=statusOffline] {
+[class*=modal] [class*=listAvatar] [class*=offline] {
     top: -3px;
     width: 40px;
     height: 40px;
