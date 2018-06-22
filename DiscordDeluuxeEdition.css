@@ -1,5 +1,5 @@
 /* DiscordDeluuxeEdition by DELUUXE */
-/* version: 3.0.0 */
+/* version: 2.0.0 */
 
 @-webkit-keyframes line {
   0% { border-color: rgb(0, 153, 255); }
@@ -147,11 +147,16 @@
     background: unset;
 }
 
-[class*=member]:hover [class*=content] {
-    background: unset !important;
+.content-OzHfo4:hover{
+    background: #0c3257 !important;
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 8px;
 }
-[class*=member]:hover {
-    background: #0c3257;
+.member-3W1lQa {
+    border-radius: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 [class*=member] [class*=popout-open] [class*=content] {
     background: #0c3257 !important;
@@ -566,7 +571,29 @@ form, .container-iksrDt {
     pointer-events:none;
     background-color: unset;
     box-shadow: inset 0 0 0 0px;
-    border-bottom: solid 4px #838383;
+    border-bottom: solid 4px #00ff40;
+}
+[class*=modal] [class*=listAvatar] [class*=dnd] {
+    top: -3px;
+    width: 40px;
+    height: 40px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px;
+    border-bottom: solid 4px #ff0000;
+}
+[class*=modal] [class*=listAvatar] [class*=idle] {
+    top: -3px;
+    width: 40px;
+    height: 40px;
+    left:-0px;
+    border-radius: 4px;
+    pointer-events:none;
+    background-color: unset;
+    box-shadow: inset 0 0 0 0px;
+    border-bottom: solid 4px #ffa600;
 }
 [class*=modal] [class*=listAvatar] [class*=offline] {
     top: -3px;
@@ -578,6 +605,11 @@ form, .container-iksrDt {
     background-color: unset;
     box-shadow: inset 0 0 0 0px;
     border-bottom: solid 4px #838383;
+}
+[class*=modal] [class*=listAvatar] [class*=image] {
+    mask: none !important;
+    -webkit-mask: none !important;
+    border-radius: 0px;
 }
 
 
