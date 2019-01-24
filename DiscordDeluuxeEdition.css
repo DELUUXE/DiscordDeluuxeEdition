@@ -401,6 +401,12 @@ form, .container-iksrDt {
     width: 100%;
     left: 0px;
 }
+[class*=userPopout] [class*=mobileIndicatorPrimary] {
+    color: #72767d;
+    position: absolute;
+    right: 4%;
+    top: 267px;
+}
 [class*=userPopout] [class*=headerTagNoNickname], [class*=userPopout] [class*=nameTag]{
     z-index: 999;
     color: white;
