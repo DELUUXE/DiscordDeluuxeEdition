@@ -2166,86 +2166,10 @@ form, .container-iksrDt {
     background-color: #000000;
 }
 
-/* ---------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------------------- */
-
-/* ------------------------------- custom user colors (VIP'S) ----------------------------- */
-
-/* ---------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------------------- */
-
-.message-group .avatar-large[style*='270116563732922369'] + .comment .user-name {
-    -webkit-animation: rainbow 30s ease-in-out infinite !important;
-}
-
-.avatar-small[style*='294963781732401152'] + .member-inner .member-username-inner::after,
-.guild-settings-modal-members .avatar-small[style*='294963781732401152'] + .member-inner .member-username::after,
-.avatar-popout[style*='294963781732401152']::after,
-.avatar-profile[style*='294963781732401152']::after,
-.message-group .avatar-large[style*='294963781732401152'] + .comment .user-name::after {
-    content: "BETA";
-}
-.avatar-small[style*='294963781732401152'] + .member-inner .member-username {
-    position: relative;
-}
-.avatar-small[style*='294963781732401152'] + .member-inner .member-username-inner::after,
-.guild-settings-modal-members .avatar-small[style*='294963781732401152'] + .member-inner .member-username::after,
-.avatar-popout[style*='294963781732401152']::after,
-.avatar-profile[style*='294963781732401152']::after,
-.message-group .avatar-large[style*='294963781732401152'] + .comment .user-name::after {
-    position: absolute;
-    height: 14px;
-    padding: 1px 2px;
-    border-radius: 3px;
-    background: #394571;
-    color: hsl(0, 0%, 100%);
-    font-size: 10px;
-    text-align: center;
-    font-weight: 700;
-    line-height: 16px;
-    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-    text-transform: uppercase;
-    vertical-align: bottom;
-}
-.message-group .avatar-large[style*='294963781732401152'] + .comment .user-name {
-    color: #ff0000  !important;
-}
-.avatar-small[style*='294963781732401152'] + .member-inner .member-username-inner::after,
-.guild-settings-modal-members .avatar-small[style*='294963781732401152'] + .member-inner .member-username::after,
-.message-group .avatar-large[style*='294963781732401152'] + .comment .user-name::after {
-    position: relative;
-    background: #394571;
-    color: hsl(0, 0%, 100%);
-    margin-left: 6px;
-}
-.avatar-small[style*='294963781732401152'] + .member-inner .member-username-inner::after {
-    top: -1px;
-    font-size: 10px;
-}
-.avatar-popout[style*='294963781732401152']::after {
-    padding: 3px;
-    font-size: 15px;
-    top: 5%;
-    right: -15%;
-    z-index: 2;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-.avatar-popout[style*='294963781732401152']:hover::after {
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 4px;
-    top: 2.5%;
-    right: -25%;
-}
-.avatar-profile[style*='294963781732401152']::after {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 3px;
-    font-size: 15px;
-    top: -5%;
-    left: 0;
-    text-transform: none;
-    width: 100%;
+/* hotfixes */
+[class*=chat] form {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
