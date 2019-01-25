@@ -274,6 +274,7 @@ form, .container-iksrDt {
     left: 3px;
 	top: 8px;
     background: no-repeat url(https://i.imgur.com/5iJ7AtQ.png);
+    background-size: contain;
 }
 .wordmark-2iDDfm svg {
 	display: none;
