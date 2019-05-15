@@ -39,7 +39,7 @@ class DiscordDeluuxeEdition {
 			link.id = DDEcss;
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = 'https://deluuxe.github.io/DiscordDeluuxeEdition/DiscordDeluuxeEdition.css';
+			link.href = 'https://deluuxe.github.io/DiscordDeluuxeEdition/DiscordDeluuxeEdition.black.css';
 			link.media = 'all';
 			head.appendChild(link);
 		}
